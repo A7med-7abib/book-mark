@@ -1,0 +1,80 @@
+:root{
+    --font-PT:"PT Sans Caption", sans-serif;
+    --font-pacifico: "Pacifico", cursive;
+    --font-right:"Righteous", sans-serif;
+}
+body{
+    background-color: #F7ECDE;
+}
+table tr {
+    margin-bottom: 10px; 
+}
+table td {
+    padding: 10px; 
+}
+.dotted-line {
+    border-top: 2px dotted #352E28; 
+    width: 100%;
+}
+::-moz-selection{
+    background-color: #FEC160;
+}
+::selection{
+    background-color: #FEC160;
+}
+main h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 0.3s;
+    cursor: alias;
+    z-index: -1;
+}
+main h1:hover::before {
+    height: 50%;
+}
+main h1{
+    font-size: 50px;
+    color: #352e28;
+    font-weight: 500;
+    font-family: var(--font-pacifico);
+}
+main h2{
+    font-family: var(--font-right);
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.bg-sub-btn{
+    background-color: #D1512D;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    color: white;
+}
+.bg-sub-btn:hover{
+    background-color: #BB4220;
+    color: white;
+}
+.btn-visit{
+    background-color: #9EB23C;
+    color: white;
+}
+.btn-visit:hover{
+    background-color: #8A9E23;
+    color: white;
+}
+.btn-del{
+    background-color: #EB1D36;
+    color: white;
+}
+.btn-del:hover{
+    background-color: #D40820;
+    color: white;
+}
